@@ -18,7 +18,12 @@
     "prettier/prettier": [
       "error",
       {},
-      { "usePrettierrc": true, "singleQuote": true, "parser": "flow" }
+      {
+        "usePrettierrc": true,
+        "singleQuote": true,
+        "parser": "flow",
+        "endOfLine": "auto"
+      }
     ],
     "max-len": ["error", { "code": 100, "comments": 120 }]
   },
