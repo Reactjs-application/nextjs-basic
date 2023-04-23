@@ -1,0 +1,11 @@
+# Ignore build artifacts
+build/
+dist/
+.next/
+
+# Ignore third-party code
+node_modules/
+.git
+
+# Ignore generated files
+/src/api
