@@ -3,20 +3,23 @@
     "next",
     "next/core-web-vitals",
     "eslint:recommended",
-    "plugin:react/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:import/errors",
-    "plugin:import/warnings",
     "plugin:jsx-a11y/recommended",
     "plugin:prettier/recommended"
   ],
-  "plugins": ["prettier"],
+  "plugins": ["react", "prettier"],
   "parserOptions": {
     "project": "./jsconfig.json"
   },
 
   "rules": {
-    "prettier/prettier": ["error", {}, { "usePrettierrc": true }],
+    "react/prop-types": "off",
+    "import/prefer-default-export": "off",
+    "prettier/prettier": [
+      "error",
+      {},
+      { "usePrettierrc": true, "singleQuote": true, "parser": "flow" }
+    ],
     "max-len": ["error", { "code": 100, "comments": 120 }]
   },
   "settings": {
