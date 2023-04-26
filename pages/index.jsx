@@ -22,7 +22,8 @@ export default function Home() {
             blurDataURL="data..."
             placeholder="blur"
           />
-          <p>Hello world!</p>
+          <p>HOST {process.env.NEXT_PUBLIC_HOST}</p>
+          <p>DB_PASS: {process.env.NEXT_PUBLIC_DB_PASS}</p>
         </div>
       </section>
     </>
