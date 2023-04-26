@@ -19,6 +19,15 @@ export const getStaticProps = async () => {
   const res = await fetch(api.blog);
   const data = await res.json();
 
+  if (!data) {
+    return {
+      redirect: {
+        destination: "/",
+        permanent: false,
+      },
+    };
+  }
+
   return {
     props: {
       data,

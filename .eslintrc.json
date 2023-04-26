@@ -5,7 +5,9 @@
     "eslint:recommended",
     "plugin:react-hooks/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:@next/next/recommended",
+    "prettier"
   ],
   "plugins": ["react", "prettier"],
   "parserOptions": {
@@ -15,6 +17,7 @@
   "rules": {
     "react/prop-types": "off",
     "import/prefer-default-export": "off",
+    "import/no-anonymous-default-export": "warn",
     "prettier/prettier": [
       "error",
       {},
