@@ -9,7 +9,7 @@ export default function handler(req, res) {
     );
 
     if (!comment) {
-      return res.status(500).json({ messgae: "comment not found!" });
+      return res.status(404).json({ messgae: "comment not found!" });
     }
     return res.status(200).json(comment);
   } else if (req.method === "DELETE") {

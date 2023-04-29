@@ -1,4 +1,5 @@
 import React, { useRef, useState } from "react";
+import Link from "next/link";
 
 export default function CommentsPage() {
   const [comments, setComments] = useState([]);
@@ -50,10 +51,14 @@ export default function CommentsPage() {
       <br />
       {comments.map((list) => {
         return (
-          <div key={list.id}>
-            <p>{list.text}</p>
-            <button onClick={() => handleDeleteComment(list.id)}>Delete</button>
-          </div>
+          <Link href={`/comments/${list.id}`} key={list.id}>
+            <div>
+              <p>{list.text}</p>
+              <button onClick={() => handleDeleteComment(list.id)}>
+                Delete
+              </button>
+            </div>
+          </Link>
         );
       })}
     </>
