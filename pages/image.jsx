@@ -8,8 +8,8 @@ import ResponsiveImg from "@/components/responsiveImg";
 export default function ImagePage({ image }) {
   return (
     <>
-      <LqipImg image={image} />
       <ResponsiveImg />
+      <LqipImg image={image} />
     </>
   );
 }
