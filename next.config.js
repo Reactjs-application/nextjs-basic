@@ -22,6 +22,10 @@ module.exports = () => {
         },
       ],
     },
+    i18n: {
+      locales: ["en-US", "en", "de"],
+      defaultLocale: "en-US",
+    },
     webpack: (config, { isServer }) => {
       const cfg = {
         ...config,

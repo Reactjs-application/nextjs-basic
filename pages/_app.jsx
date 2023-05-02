@@ -1,3 +1,4 @@
+import { NextIntlProvider } from "next-intl";
 import localFont from "next/font/local";
 import "@/styles/globals.css";
 
@@ -15,10 +16,12 @@ const firaCode = localFont({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={firaCode.className}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </main>
+    <NextIntlProvider messages={pageProps.messages}>
+      <main className={firaCode.className}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </main>
+    </NextIntlProvider>
   );
 }

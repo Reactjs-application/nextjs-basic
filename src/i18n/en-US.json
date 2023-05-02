@@ -1,0 +1,8 @@
+{
+    "static": "Hello world!",
+    "interpolation": "Hello {name}!",
+    "plural": "You have {numMessages, plural, =0 {no messages} =1 {one message} other {# messages}}.",
+    "select": "{gender, select, female {She} male {He} other {They}} is online.",
+    "selectordinal": "It's your {year, selectordinal, one {#st} two {#nd} few {#rd} other {#th}} birthday!",
+    "escaped": "Escape curly braces with single quotes (e.g. '{name'})"
+}
