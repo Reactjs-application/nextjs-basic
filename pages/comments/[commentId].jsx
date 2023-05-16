@@ -19,7 +19,12 @@ export default function Comment() {
     return <p>Not found!</p>;
   }
 
-  return <div>Message: {data?.text}</div>;
+  return (
+    <div>
+      Message: {data?.text}
+      <p>Hello world!</p>
+    </div>
+  );
 }
 
 const fetcher = (url) => fetch(url).then((r) => r.json());
